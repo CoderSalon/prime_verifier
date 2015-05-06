@@ -4,10 +4,14 @@ verifyButton.onclick = function(){
 
 	// ==== 以下是你要寫程式的地方 ==== //
 
-	for (var i=2; i<Math.sqrt(number)+1; i++){
-		if(number%i===0){
-			isPrime = false;
-			break;
+	if(number==1){
+		isPrime = false;
+	} else {
+		for (var i=2; i<Math.sqrt(number)+1; i++){
+			if(number%i===0){
+				isPrime = false;
+				break;
+			}
 		}
 	}
 
